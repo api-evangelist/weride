@@ -1,8 +1,23 @@
 aid: weride
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/weride.png
 name: WeRide
-description: 'WeRide is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. Sector: autonomous-driving. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'WeRide (NASDAQ: WRD) is an autonomous driving technology company founded in 2017 and headquartered
+  in Guangzhou, China. It develops Level 4 self-driving technology across a portfolio of five core products
+  — Robotaxi, Robobus, Robovan, Robosweeper (autonomous sanitation) and advanced driver-assistance systems
+  (ADAS) — and operates its fleets in more than 40 cities across 12 countries. WeRide does not publish a
+  public developer API, SDK, or developer portal; this profile captures the company''s public web presence
+  and domain-security posture as surfaced by the API Evangelist enrichment pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/weride/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Autonomous Driving
+- Robotaxi
+- Self-Driving
+- Mobility
+- Transportation
+- ADAS
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/weride-domain-security.yml
 - type: Website
   url: https://weride.ai
+- type: PrivacyPolicy
+  url: https://weride.ai/privacy
+- type: TermsOfService
+  url: https://weride.ai/terms
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
